@@ -1,0 +1,7 @@
+<script>
+  var resultElement = document.getElementById('result');
+  var currentDate = new Date();
+  currentDate.setDate(currentDate.getDate() + 60);
+  var futureDate = currentDate.toLocaleDateString('en-US');
+  resultElement.innerHTML = 'The date 60 days from now is: ' + futureDate;
+</script>
